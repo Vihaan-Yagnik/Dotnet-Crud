@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\views\\bills\\billstable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:views\\bills\\billstable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\views\\bills\\billsform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:views\\bills\\billsform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\views\\orderdetail\\orderdetailform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:views\\orderdetail\\orderdetailform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\views\\order\\orderform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:views\\order\\orderform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|c:\\users\\lenovo\\desktop\\darshanuni\\dotnet lab\\admin3\\admin3\\views\\user\\userform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6B1665-97DE-4254-A944-52BA05702049}|Admin3.csproj|solutionrelative:views\\user\\userform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillsTable.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Bills\\BillsTable.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bills\\BillsTable.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Bills\\BillsTable.cshtml",
+              "RelativeToolTip": "Views\\Bills\\BillsTable.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T08:00:18.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillsForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Bills\\BillsForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bills\\BillsForm.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Bills\\BillsForm.cshtml",
+              "RelativeToolTip": "Views\\Bills\\BillsForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T07:59:07.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillsController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\BillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BillsController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\BillsController.cs",
+              "RelativeToolTip": "Controllers\\BillsController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAwCgBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T07:58:46.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderDetailController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "Controllers\\OrderDetailController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T07:57:31.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDetailForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "RelativeToolTip": "Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T07:57:14.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\User\\UserForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\UserForm.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\User\\UserForm.cshtml",
+              "RelativeToolTip": "Views\\User\\UserForm.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T07:56:49.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Order\\OrderForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\OrderForm.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Views\\Order\\OrderForm.cshtml",
+              "RelativeToolTip": "Views\\Order\\OrderForm.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T07:56:42.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DarshanUni\\Dotnet lab\\Admin3\\Admin3\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwO8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T07:56:06.011Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

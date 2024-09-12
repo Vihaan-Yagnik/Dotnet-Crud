@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Employee Project Form";
+}
+@model EmployeeProjectModel;
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Employee Project Form</h5>
+
+        <!-- Multi Columns Form -->
+        <form method="post" asp-action="SaveEmployeeProject" asp-controller="EmployeeProject" class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="EmployeeId" for="inputState" class="form-label">Empoloyee ID</label>
+                <select asp-for="EmployeeId" id="inputState" class="form-select">
+                    <option selected>Chose Employee Id</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="ProjectId" for="inputState" class="form-label">Project ID</label>
+                <select asp-for="ProjectId" id="inputState" class="form-select">
+                    <option selected>Chose Project Id</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="hidden" asp-for="EmployeeProjectId" />
+                <button type="submit" class="btn btn-primary">Submit</button>
+                @* <button type="reset" class="btn btn-secondary">Reset</button> *@
+            </div>
+        </form><!-- End Multi Columns Form -->
+
+    </div>
+</div>

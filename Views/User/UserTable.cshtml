@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "User Table Data";
+}
+@* @model List<Admin3.Models.UserModel> *@
+@using System.Data
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">User Data</h5>
+        <span class="text-danger">@TempData["ErrorMsg"]</span>
+        <a class="btn btn-primary mb-3" asp-action="UserAddEdit" asp-controller="User" asp-route-UserID=0>+ Add</a>
+        <form enctype="multipart/form-data" asp-action="Import" asp-controller="User" method="post">
+            <input type="file" class="btn btn-success mb-3" name="file" />
+            <button type="submit" class="btn btn-primary mb-3">Import Excel</button>
+        </form>
+        <form asp-action="Export" asp-controller="User" method="post">
+            <button type="submit" class="btn btn-success mb-3">Export to Excel</button>
+        </form>
+
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">UserID </th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">MobileNo</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Action</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (DataRow user in Model.Rows)
+                {
+                    <tr>
+                        <th scope="row">@user["UserID"]</th>
+                        <td>@user["UserName"]</td>
+                        <td>@user["Email"]</td>
+                        <td>@user["Password"]</td>
+                        <td>@user["MobileNo"]</td>
+                        <td>@user["Address"]</td>
+                        <td class="d-flex justify-content-center">
+                            <a method="post" asp-controller="User" asp-action="UserAddEdit" asp-route-UserID="@Convert.ToInt32(user["UserID"])">
+                                <button type="submit" class="btn btn-success me-2">Edit</button>
+                            </a>
+                            <a asp-action="DelUser" asp-controller="User" asp-route-id="@Convert.ToInt32(user["UserID"])">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

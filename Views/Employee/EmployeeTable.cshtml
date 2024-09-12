@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Employee Table Data";
+}
+@model List<Admin3.Models.EmployeeModel>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Employee Data</h5>
+        <a class="btn btn-primary mb-3" href="~/Employee/EmployeeForm">+ Add</a>
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Employee ID </th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone_Number</th>
+                    <th scope="col">Hire_Date</th>
+                    <th scope="col">Job_Title</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">DepartmentId</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var emp in Model)
+                {
+                    <tr>
+                        <th scope="row">@emp.EmployeeId</th>
+                        <td>@emp.FirstName</td>
+                        <td>@emp.LastName</td>
+                        <td>@emp.Email</td>
+                        <td>@emp.Phone_Number</td>
+                        <td>@emp.Hire_Date</td>
+                        <td>@emp.Job_Title</td>
+                        <td>@emp.Salary</td>
+                        <td>@emp.DepartmentId</td>
+                        <td class="d-flex">
+                            <form method="post" asp-controller="Employee" asp-action="AddEdit">
+                                <input type="hidden" name="EmployeeId" value="@emp.EmployeeId"/>
+                                <button type="submit" class="btn btn-success me-2" >Edit</button>
+                            </form>
+                            <form method="post" asp-controller="Employee" asp-action="DelEmp">
+                                <input type="hidden" name="EmployeeId" value="@emp.EmployeeId" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

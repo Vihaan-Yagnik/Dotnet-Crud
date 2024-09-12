@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Employee Form";
+}
+@model Admin3.Models.EmployeeModel;
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Employee Form</h5>
+
+        <!-- Multi Columns Form -->
+        <form method="post" asp-action="SaveEmployee" asp-controller="Employee" class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="FirstName" for="inputEmail5" class="form-label">First Name</label>
+                <input asp-for="FirstName" type="text" placeholder="Enter Employee First Name" class="form-control" id="inputEmail5">
+            </div>
+            <div class="col-md-6">
+                <label asp-for="LastName" for="inputPassword5" class="form-label">Last Name</label>
+                <input asp-for="LastName" type="text" placeholder="Enter Last Name" class="form-control" id="inputPassword5">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Email" for="inputAddress5" class="form-label">Email</label>
+                <input asp-for="Email" type="Email" class="form-control" id="inputAddres5s" placeholder="Enter Email">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Phone_Number" for="inputAddress2" class="form-label">Phone_Number</label>
+                <input asp-for="Phone_Number" type="text" class="form-control" id="inputAddress2" placeholder="Enter A Mobile Number">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Salary" for="inputZip" class="form-label">Salary</label>
+                <input asp-for="Salary" type="text" class="form-control" id="inputZip" placeholder="Enter Salary">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Hire_Date" for="inputCity" class="form-label">HireDate</label>
+                <input asp-for="Hire_Date" type="date" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="Job_Title" for="inputState" class="form-label">Job Title</label>
+                <input asp-for="Job_Title" type="text" class="form-control" id="inputZip" placeholder="Enter Job Title">
+            </div>
+            <div class="col-md-4">
+                <label asp-for="DepartmentId" for="inputState" class="form-label">Department ID</label>
+                <select asp-for="DepartmentId" id="inputState" class="form-select">
+                    <option selected>Chose Department Id</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="hidden" name="EmployeeId" asp-for="EmployeeId"/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                @* <button type="reset" class="btn btn-secondary">Reset</button> *@
+            </div>
+        </form><!-- End Multi Columns Form -->
+
+    </div>
+</div>

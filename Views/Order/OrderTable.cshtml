@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Order Table Data";
+}
+@* @model List<Admin3.Models.OrderModel> *@
+@using System.Data;
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Order Data</h5>
+        <span class="text-danger">@TempData["ErrorMsg"]</span>
+        <a class="btn btn-primary mb-3" asp-controller="Order" asp-action="OrderAddEdit" asp-route-OrderID=0>+ Add</a>
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">OrderId</th>
+                    @* <th scope="col">OrderNO</th> *@
+                    <th scope="col">OrderDate</th>
+                    <th scope="col">CustomerName</th>
+                    <th scope="col">PaymentMode</th>
+                    <th scope="col">TotalAmount</th>
+                    <th scope="col">ShippingAddress</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Action</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (DataRow o in Model.Rows)
+                {
+                    <tr>
+                        <th scope="row">@o["OrderID"]</th>
+                        <td>@o["OrderNO"]</td>
+                        <td>@o["OrderDate"]</td>
+                        <td>@o["CustomerName"]</td>
+                        <td>@o["PaymentMode"]</td>
+                        <td>@o["TotalAmount"]</td>
+                        <td>@o["ShippingAddress"]</td>
+                        <td>@o["UserName"]</td>
+                        <td class="d-flex justify-content-center">
+                            <a method="post" asp-action="OrderAddEdit" asp-controller="Order" asp-route-OrderID="@Convert.ToInt32(o["OrderID"])">
+                                <button type="submit" class="btn btn-success me-2">Edit</button>
+                            </a>
+                            <a asp-action="DelOrder" asp-controller="Order" asp-route-id="@Convert.ToInt32(o["OrderID"])">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

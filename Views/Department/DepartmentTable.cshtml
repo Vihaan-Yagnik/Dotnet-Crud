@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Department Table Data";
+}
+@model List<Admin3.Models.DepartmentModel> 
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Employee Data</h5>
+        <a class="btn btn-primary mb-3" href="~/Department/DepartmentForm">+ Add</a>
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Department ID </th>
+                    <th scope="col">Department Name</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var D in Model)
+                {
+                    <tr>
+                        <th scope="row">@D.DepartmentId</th>
+                        <td>@D.DepartmentName</td>
+                        <td class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-success me-2">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Bills Table Data";
+}
+@using System.Data;
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Bills Data</h5>
+        <a class="btn btn-primary mb-3" asp-action="BillsAddEdit" asp-controller="Bills" asp-route-BillID=0>+ Add</a>
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">BillID </th>
+                    <th scope="col">BillNumber</th>
+                    <th scope="col">BillDate</th>
+                    <th scope="col">OrderID</th>
+                    <th scope="col">TotalAmount</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">NetAmount</th>
+                    <th scope="col">UserID</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (DataRow B in Model.Rows)
+                {
+                    <tr>
+                        <th scope="row">@B["BillID"]</th>
+                        <td>@B["BillNumber"]</td>
+                        <td>@B["BillDate"]</td>
+                        <td>@B["OrderID"]</td>
+                        <td>@B["TotalAmount"]</td>
+                        <td>@B["Discount"]</td>
+                        <td>@B["NetAmount"]</td>
+                        <td>@B["UserName"]</td>
+                        <td class="d-flex justify-content-center">
+                            <a method="post" asp-controller="Bills" asp-action="BillsAddEdit" asp-route-BillID="@Convert.ToInt32(B["BillID"])">
+                                <button type="submit" class="btn btn-success me-2">Edit</button>
+                            </a>
+                            <a asp-controller="Bills" asp-action="DelBill" asp-route-id="@Convert.ToInt32(B["BillID"])">
+                                <button type="submit" class="btn btn-danger me-2">Delete</button>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

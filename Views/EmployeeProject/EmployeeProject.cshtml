@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Employee Project Table Data";
+}
+@model List<Admin3.Models.EmployeeProjectModel>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Employee Project Data</h5>
+        <a class="btn btn-primary mb-3" href="~/EmployeeProject/EmployeeProjectForm">+ Add</a>
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Project ID </th>
+                    <th scope="col">Employee Id</th>
+                    <th scope="col">Project Id</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var EP in Model)
+                {
+                    <tr>
+                        <th scope="row">@EP.EmployeeProjectId</th>
+                        <td>@EP.EmployeeId</td>
+                        <td>@EP.ProjectId</td>
+                        <td class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-success me-2">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>
