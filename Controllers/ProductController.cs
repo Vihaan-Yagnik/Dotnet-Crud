@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Admin3.Controllers
 {
+    [CheckAccess]
     public class ProductController : Controller
     {
        
